@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+*{
+	box-sizing:border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* Mobile view */
+div.nav{
+	text-align: right;
+}
+.nav a {
+	display:block;
+	color:black;
+	text-decoration:none;
+	font-size: 9px;
+}
+.nav a:hover{
+	color:rgb(61, 61, 182);
+}
+
+.yy{
+	text-align: center;
+	width:100%;
+	margin-top: 50px;
+}
+.yy img{
+	width:50%;
+	height: 80px;
+	
+
+}
+.yy img[alt='google image']{
+	width:67%;
+	height:85px;
+}
+.yy>div{
+	margin-top:12px ;
+	text-align: center;
+	width:100%;
+}
+ 
+#tee{
+
+	border-radius:20px;
+	padding: 0 20px;
+	height:30px;
+	width:70%;
+	border:none;
+	box-shadow: 0px 0px 3px 1px rgb(219, 218, 218);
+	font-size:10px; 
+	font-weight:normal; 
+}
+
+#button{
+	text-align:center;
+	margin-top: 20px;
+}
+button{
+	font-size:8px;
+	border:2px inset rgb(230,230,230);
+	padding: 5px 10px;
+}
+button:hover{
+	background-color:red;
+}
+#imagesrch {
+	font-size:8px;
+	width:50%; 
+	padding:6px 15px;
+	background-color:rgb(61, 61, 182);
+	color:white;
+	border:2px groove rgb(230,230,230);
+}
+#imagesrch:hover{
+	background-color:rgb(37, 37, 160);
+}
+
+#imagesrch:active,button:active{
+	transform:scale(0.8)
+
+}
+input[type="text"]:focus{
+	outline:none;
+}
+#header{
+	background-color:rgb(253, 253, 253);
+	color:#d93025; 
+	font-weight: 300;
+	font-size:20px;
+	text-align:left;
+	padding:10px 30px;
+	border-bottom:1px solid rgb(180,180,180);
+}
+#section{
+	padding:30px;
+}
+#section div{
+	width:100%;
+	margin-bottom:10px;
+}
+#adimg{
+	float:left;
+	width:18%;
+	height:30px;
+	margin: 12px 0 0 5px;
+
+	
+}
+#adbutton{
+	color:white; 
+	background-color:blue;
+	height:40px; 
+	width:150px;
+	margin-left:95px;
+}
+.submain{ 
+	border:1px solid rgb(216, 201, 201); 
+	height:25px;
+	width:100%; 
+	padding:8px;
+}
+.submain:focus{
+	box-shadow: inset 0px 0px 3px 1px rgba(36, 36, 182,0.3);
+}
+label{
+	font-size:12px;
+}
+
+#subheader{
+	font-size:15px;
+	font-weight:400;
+}
+
+
+
+/* tablet view */
+
+@media(min-width:600px){
+	.nav a {
+		font-size: 10px;
+	}
+	.yy img{
+		height:120px;
+	}
+	.yy img[alt='google image']{
+		height:130px;
+	}
+
+	#adbutton{
+		margin-left:200px;
+
+	}
+	#adimg{
+		height: 40px;
+		width:15%;
+	}
+}
+
+
+
+/* laptop,desktop... view */
+@media(min-width:768px){
+	.nav a {
+		font-size: 14px;
+	}
+	.yy{
+		
+		margin-top: 100px;
+	}
+	.yy img{
+		width:30%;
+		height: 160px;
+		
+	
+	}
+	.yy img[alt='google image']{
+		width:36%;
+		height:170px;
+	}
+	.yy>div{
+		margin-top:20px ;
+	}
+	#tee{
+		height:40px;
+		width:40%;
+		padding:0 30px;
+		font-size:16px;
+		border-radius: 25px;
+	}
+	#button{
+		margin-top:25px;
+	}
+	button{
+		font-size:16px;
+		padding:10px 25px;
+
+	}
+	#imagesrch{
+		width:25%;
+		font-size:14px;
+	}
+
+	#adimg{
+		float:left;
+		width:8.6%;
+		height:45px;
+		margin: 12px 0 0 5px;
+	
+		
+	}
+	#header{
+		font-size:20px;
+		padding: 20px 48px;
+	}
+	#subheader{
+		font-size:16px;
+	}
+	#section{
+		padding:10px 48px;
+	}
+	label{
+		font-size:14px;
+		display:inline-block;
+		width: 17%;
+	
+	}
+	.submain{
+		display: inline-block;
+		width:82.5%;
+		height: 30px;
+	}
+	#adbutton{
+		margin-left:500px;
+		margin-top:20px;
+		height:48px; 
+		width:220px;
+		font-size:18px;
+	}
+	#section div{
+		margin-bottom:15px;
+	}
+}
